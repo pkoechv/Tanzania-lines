@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiswahili Promosheni</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.solidbackgrounds.com/images/1920x1080/1920x1080-bright-green-solid-color-background.jpg'); /* Replace 'background_image.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+        }
+        li:hover {
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tafadhali Jisajili sasa hivi ili kupokea promosheni yako baada ya dakika tano.</h1>
+        <p>UTATUMIA LAINI GANI KULIPIA ADA YA USAJIL?</p>
+        <ol>
+            <li onclick="navigateTo('vodacom')">Vodacom</li>
+            <li onclick="navigateTo('tigo')">Tigo pesa</li>
+            <li onclick="navigateTo('airtel')">Airtel</li>
+        </ol>
+    </div>
+
+    <script>
+        function navigateTo(provider) {
+            // Depending on the provider clicked, navigate to the corresponding page
+            switch (provider) {
+                case 'vodacom':
+                    window.location.href = 'https://a11-delta.vercel.app/';
+                    break;
+                case 'tigo':
+                    window.location.href = 'https://a10-flame.vercel.app/';
+                    break;
+                case 'airtel':
+                    window.location.href = 'https://a9-sigma.vercel.app/';
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
